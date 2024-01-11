@@ -36,7 +36,7 @@ const Game = ({
         {letters.map((letter, index) =>
           guessedLetters.includes(letter) ? (
             <span key={index} className="letter">
-              letter
+              {letter}
             </span>
           ) : (
             <span key={index} className="blankSquare"></span>
@@ -55,7 +55,7 @@ const Game = ({
             value={letter}
             ref={letterInputRef}
           />
-          <button onClick={verifyLetter}>Jogar!</button>
+          <button>Jogar!</button>
         </form>
       </div>
       <div className="wrongLetterContainer">
